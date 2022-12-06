@@ -19,5 +19,22 @@ if (navigator.serviceWorker) {
  * This function displays an alert.
  */
 function myButtonClicked() {
-  document.getElementById("hello-world").innerHTML = "<p>Hello, World!</p>"
+  const TAX = 1.13
+  const delivery = 10
+  const size = parseFloat(document.getElementById("Salad-Size").value)
+  const dressing = parseFloat(document.getElementById("Salad-Dressing").value)
+
+  const basePriceNoTAX = size + dressing
+  const basePrice = basePriceNoTax * TAX
+  const deliveryOnly = (basePriceNoTAX + delivery) * TAX
+
+  buttonOnChecked = document.getElementById('flash1').checked
+
+  if (buttonOnChecked == true) {
+    document.getElementById("Cost").innerHTML =
+    "Your total is: $" + deliveryOnly.toFixed(2) + "including tax."
+  } else {
+    document.getElementById("Cost").innerHTML =
+    "Your total is: $" + basePrice.toFixed(2) + "including tax."
+  }
 }
