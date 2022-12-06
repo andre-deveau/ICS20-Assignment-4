@@ -28,13 +28,13 @@ function myButtonClicked() {
   const basePrice = basePriceNoTax * TAX
   const deliveryOnly = (basePriceNoTAX + delivery) * TAX
 
-  buttonOnChecked = document.getElementById('flash1').checked
+  buttonOnChecked = document.getElementById("flash1").checked
 
   if (buttonOnChecked == true) {
     document.getElementById("Cost").innerHTML =
-    "Your total is: $" + deliveryOnly.toFixed(2) + "including tax."
+      "Your total is: $" + deliveryOnly.toFixed(2) + "including tax."
   } else {
     document.getElementById("Cost").innerHTML =
-    "Your total is: $" + basePrice.toFixed(2) + "including tax."
+      "Your total is: $" + basePrice.toFixed(2) + "including tax."
   }
 }
