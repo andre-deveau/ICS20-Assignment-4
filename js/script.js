@@ -25,7 +25,7 @@ function myButtonClicked() {
   const dressing = parseFloat(document.getElementById("Salad-Dressing").value)
 
   const basePriceNoTAX = size + dressing
-  const basePrice = basePriceNoTax * TAX
+  const basePrice = basePriceNoTAX * TAX
   const deliveryOnly = (basePriceNoTAX + delivery) * TAX
 
   buttonOnChecked = document.getElementById("flash1").checked
