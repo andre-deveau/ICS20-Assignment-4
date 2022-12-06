@@ -61,79 +61,49 @@
           src="./images/notebook-animation.svg"
           alt="Computer"
           width="25%"
-          height="25%"
-        />
-        <div
-          class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"
-        >
-          <select class="mdl-textfield__input" id="octane" name="octane">
-            <option></option>
-            <option value="2.99">Small Salad (+ $2.99)</option>
-            <option value="6.99">Medium Salad (+ $6.99)</option>
-            <option value="9.99">Large Salad (+ $9.99)</option>
-          </select>
-          <div
-            class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"
-          >
-            <select class="mdl-textfield__input" id="octane" name="octane">
+          height="25%">
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <select class="mdl-textfield__input" id="Salad-Size" name="Salad Size">
               <option></option>
-              <option value="Ranch Dressing">Ranch Dressing (+ $4.99)</option>
-              <option value="Bleu Cheese Dressing ">
-                Bleu Cheese Dressing (+ $9.99)
-              </option>
-              <option value="Caesar Dressing">Caesar Dressing (+ $1.99)</option>
-              <option value="Italian Dressing">
-                Italian Dressing (+ $19.99)
-              </option>
+              <option value="2.99">Small Salad (+ $2.99)</option>
+              <option value="6.99">Medium Salad (+ $6.99)</option>
+              <option value="9.99">Large Salad (+ $9.99)</option>
             </select>
-            <label class="mdl-textfield__label" for="Salad-Dressing"
-              >Select Salad Dressing</label
-            >
-          </div>
-          <label class="mdl-textfield__label" for="Salad-Size"
-            >Select Salad Size</label
-          >
-          <p>Do you want Delivery?</p>
-          <div id="radio-buttons">
-            <label
-              class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
-              for="flash1"
-            >
-              <input
-                checked
-                class="mdl-radio__button"
-                id="flash1"
-                name="flash"
-                type="radio"
-                value="on"
-              />
-              <span class="mdl-radio__label">Yes (+ $9.99)</span>
-            </label>
-            <label
-              class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
-              for="flash2"
-            >
-              <input
-                class="mdl-radio__button"
-                id="flash2"
-                name="flash"
-                type="radio"
-                value="off"
-              />
-              <span class="mdl-radio__label">Pickup (+ $0.00)</span>
-            </label>
-            <div>
-              <!-- Raised button with ripple -->
-              <button
-                class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-                onclick="myButtonClicked()"
-              >
-                Cost
-              </button>
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+              <select class="mdl-textfield__input" id="Salad-Dressing" name="Salad Dressing">
+                <option></option>
+                <option value="Ranch Dressing">Ranch Dressing (+ $4.99)</option>
+                <option value="Bleu Cheese Dressing ">Bleu Cheese Dressing (+ $9.99)</option>
+                <option value="Caesar Dressing">Caesar Dressing (+ $1.99)</option>
+                <option value="Italian Dressing">Italian Dressing (+ $19.99)</option>
+              </select>
+              <label class="mdl-textfield__label" for="Salad-Dressing">Select Salad Dressing</label>
             </div>
-            <div id="Cost"></div>
+            <label class="mdl-textfield__label" for="Salad-Size">Select Salad Size</label>
+            <p>Do you want Delivery?</p>
+            <div id="radio-buttons">
+                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="flash1">
+                  <input checked class="mdl-radio__button" id="flash1" name="flash" type="radio"
+                   value="on">
+                  <span class="mdl-radio__label">Yes (+ $9.99)</span>
+                </label>
+                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="flash2">
+                  <input class="mdl-radio__button" id="flash2" name="flash" type="radio" value="off">
+                  <span class="mdl-radio__label">Pickup (+ $0.00)</span>
+                </label>
+                <div>
+                  <!-- Raised button with ripple -->
+                  <button
+                    class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+                    onclick="myButtonClicked()"
+                  >
+                    Cost
+                  </button>
+                </div>
+                <div id="Cost">
+                </div>
+            </div>
           </div>
-        </div>
       </main>
     </div>
   </body>
