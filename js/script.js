@@ -1,7 +1,7 @@
 // Copyright (c) 2022 Andre Deveau All rights reserved
 //
 // Created by: Andre Deveau
-// Created on: Oct 2022
+// Created on: Dec 2022
 // This file contains the JS functions for index.html
 
 "use strict"
@@ -28,7 +28,7 @@ function myButtonClicked() {
   const basePrice = basePriceNoTAX * TAX
   const deliveryOnly = (basePriceNoTAX + delivery) * TAX
 
-  buttonOnChecked = document.getElementById("flash1").checked
+  const buttonOnChecked = document.getElementById("flash1").checked
 
   if (buttonOnChecked == true) {
     document.getElementById("Cost").innerHTML =
