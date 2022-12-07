@@ -77,63 +77,66 @@
             <option value="9.99">Large Salad (+ $9.99)</option>
           </select>
           <label class="mdl-textfield__label" for="Salad-Size">Select Salad Size</label>
-            <label class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"></label>
-            <select
-              class="mdl-textfield__input"
-              id="Salad-Dressing"
-              name="Salad Dressing"
+        </div>
+        <div
+          class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"
+        >
+          <select
+            class="mdl-textfield__input"
+            id="Salad-Dressing"
+            name="Salad Dressing"
+          >
+            <option></option>
+            <option value="Ranch Dressing">Ranch Dressing (+ $4.99)</option>
+            <option value="Bleu Cheese Dressing ">Bleu Cheese Dressing (+ $9.99)</option>
+            <option value="Caesar Dressing">Caesar Dressing (+ $1.99)</option>
+            <option value="Italian Dressing">Italian Dressing (+ $19.99)</option>
+          </select>
+          <label class="mdl-textfield__label" for="Salad-Dressing"
+            >Select Salad Dressing</label
+          >
+        </div>
+        <p>Do you want Delivery?</p>
+        <div id="radio-buttons">
+          <label
+            class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
+            for="flash1"
+          >
+            <input
+              checked
+              class="mdl-radio__button"
+              id="flash1"
+              name="flash"
+              type="radio"
+              value="on"
+            />
+            <span class="mdl-radio__label">Yes (+ $9.99)</span>
+          </label>
+          <label
+            class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
+            for="flash2"
+          >
+            <input
+              class="mdl-radio__button"
+              id="flash2"
+              name="flash"
+              type="radio"
+              value="off"
+            />
+            <span class="mdl-radio__label">Pickup (+ $0.00)</span>
+          </label>
+          <div>
+            <!-- Raised button with ripple -->
+            <button
+              class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+              onclick="myButtonClicked()"
             >
-              <option></option>
-              <option value="Ranch Dressing">Ranch Dressing (+ $4.99)</option>
-              <option value="Bleu Cheese Dressing ">Bleu Cheese Dressing (+ $9.99)</option>
-              <option value="Caesar Dressing">Caesar Dressing (+ $1.99)</option>
-              <option value="Italian Dressing">Italian Dressing (+ $19.99)</option>
-            </select>
-            <label class="mdl-textfield__label" for="Salad-Dressing"
-              >Select Salad Dressing</label
-            >
+              Cost
+            </button>
           </div>
-          <p>Do you want Delivery?</p>
-          <div id="radio-buttons">
-            <label
-              class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
-              for="flash1"
-            >
-              <input
-                checked
-                class="mdl-radio__button"
-                id="flash1"
-                name="flash"
-                type="radio"
-                value="on"
-              />
-              <span class="mdl-radio__label">Yes (+ $9.99)</span>
-            </label>
-            <label
-              class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
-              for="flash2"
-            >
-              <input
-                class="mdl-radio__button"
-                id="flash2"
-                name="flash"
-                type="radio"
-                value="off"
-              />
-              <span class="mdl-radio__label">Pickup (+ $0.00)</span>
-            </label>
-            <div>
-              <!-- Raised button with ripple -->
-              <button
-                class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-                onclick="myButtonClicked()"
-              >
-                Cost
-              </button>
-            </div>
-            <div id="Cost"></div>
-          </div>
+          <div id="Cost"></div>
         </div>
       </main>
+    </div>
   </body>
 </html>
